@@ -1,6 +1,6 @@
 # CD-Components
 
-A TypeScript-based custom web component library for building reusable UI components for CentraDraudze, with consistent styling and behavior.
+A TypeScript-based custom web component library for building reusable UI components for LiepajasCentraDraudze, with consistent styling and behavior.
 
 ## Table of Contents
 
@@ -463,4 +463,10 @@ This will generate production-ready files in the `dist` directory.
 - Remember that events from shadow DOM need the `composed: true` flag to bubble through the shadow boundary
 - Use event listeners as shown in the examples to properly capture events
 
-For more help, please open an issue on the GitHub repository.
+## Contributing
+
+Contributions are welcome! Please feel free to [submit a Pull Request](https://github.com/arvissidorovs/cd-components/pulls).
+
+## Support
+
+For help and questions, please [open an issue](https://github.com/your-username/arvissidorovs/issues) on the GitHub repository.
