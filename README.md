@@ -469,4 +469,4 @@ Contributions are welcome! Please feel free to [submit a Pull Request](https://g
 
 ## Support
 
-For help and questions, please [open an issue](https://github.com/your-username/arvissidorovs/issues) on the GitHub repository.
+For help and questions, please [open an issue](https://github.com/arvissidorovs/cd-components/issues) on the GitHub repository.
