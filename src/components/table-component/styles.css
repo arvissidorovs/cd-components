@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  :host {
+    display: block;
+    width: 100%;
+    overflow: auto;
+  }
+  
+  .cd-table-container {
+    width: 100%;
+    overflow-x: auto;
+    position: relative;
+  }
+  
+  .cd-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: var(--cd-font-size-md, 14px);
+    color: var(--cd-text-dark, #002c6c);
+  }
+  
+  .cd-table thead {
+    background-color: var(--cd-secondary-hover, #f2f6fa);
+  }
+  
+  .cd-table th {
+    text-align: left;
+    padding: 12px 16px;
+    font-weight: 600;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    background-color: var(--cd-secondary-hover, #f2f6fa);
+    z-index: 1;
+  }
+  
+  .cd-table td {
+    padding: 12px 16px;
+    border-top: 1px solid var(--cd-border-color, #D9D9D9);
+    color: black;
+  }
+  
+  .cd-table tbody tr:hover {
+    background-color: rgba(0, 44, 108, 0.05);
+    cursor: pointer;
+  }
+  
+  .cd-table th.sortable {
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .cd-table th.sortable:hover {
+    background-color: rgba(0, 44, 108, 0.1);
+  }
+  
+  .cd-table th.sortable .sort-indicator {
+    display: inline-block;
+    margin-left: 4px;
+    opacity: 0.3;
+    vertical-align: middle;
+    transition: transform 0.2s ease;
+  }
+  
+  .cd-table th.sortable.active .sort-indicator {
+    opacity: 1;
+  }
+  
+  .cd-table th.sortable.active[data-direction="asc"] .sort-indicator {
+    transform: rotate(0deg);
+  }
+  
+  .cd-table th.sortable.active[data-direction="desc"] .sort-indicator {
+    transform: rotate(180deg);
+  }
+
+  .cd-table.striped tbody tr:hover {
+    background-color: rgba(0, 44, 108, 0.05);
+  }
+  
+  .cd-table.compact th,
+  .cd-table.compact td {
+    padding: 8px 12px;
+  }
+  
+  .empty-state {
+    padding: 32px;
+    text-align: center;
+    color: #999;
+    font-style: italic;
+  }
+  
+  @media (max-width: 768px) {
+    .cd-table-container {
+      border: 1px solid var(--cd-border-color, #D9D9D9);
+      border-radius: var(--cd-border-radius, 0.25rem);
+    }
+    
+    .cd-table th,
+    .cd-table td {
+      padding: 8px 12px;
+    }
+  }

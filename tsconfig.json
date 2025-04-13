@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "ES2015",
+      "module": "ESNext",
+      "moduleResolution": "node",
+      "isolatedModules": true,
+      "declaration": true,
+      "outDir": "./dist",
+      "strict": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "lib": ["DOM", "ES2015", "DOM.Iterable"]
+    },
+    "include": ["src", "*.d.ts"],
+    "exclude": ["node_modules", "dist", "demo"]
+  }

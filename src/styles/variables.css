@@ -1,0 +1,36 @@
+:host, :root {
+    /* Colors */
+    --cd-primary: #002c6c;
+    --cd-primary-hover: #204F96;
+    --cd-secondary-hover: #f2f6fa;
+    --cd-danger: #FF0808;
+    --cd-danger-hover: #fff2f2;
+    --cd-white: #ffffff;
+    --cd-border-color: #D9D9D9;
+    
+    /* Text colors */
+    --cd-text-light: #ffffff;
+    --cd-text-dark: #002c6c;
+    --cd-text-danger: #FF0808;
+    
+    /* Sizes */
+    --cd-border-radius: 0.25rem;
+    --cd-button-height: 40px;
+    --cd-button-width: 136px;
+    
+    /* Spacing */
+    --cd-spacing-xs: 6px;
+    --cd-spacing-sm: 12px;
+    --cd-spacing-md: 20px;
+    --cd-spacing-lg: 28px;
+    
+    /* Font sizes */
+    --cd-font-size-sm: 12px;
+    --cd-font-size-md: 14px;
+    --cd-font-size-lg: 16px;
+    
+    /* Effects */
+    --cd-transition: background-color .2s, border-color .2s, color .2s, box-shadow .2s;
+    --cd-disabled-opacity: 0.3;
+    --cd-focus-shadow: 0 0 0 2px rgba(0, 44, 108, 0.3);
+  }

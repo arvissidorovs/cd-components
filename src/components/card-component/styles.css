@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  :host {
+    display: block;
+    --card-padding: 16px;
+    --card-border-radius: var(--cd-border-radius, 0.25rem);
+  }
+  
+  .cd-card {
+    background-color: var(--cd-white, #ffffff);
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    width: 100%;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  
+  .cd-card-content {
+    padding: var(--card-padding);
+  }
+  
+  .cd-card.elevation-0 {
+    border: 1px solid var(--cd-border-color, #D9D9D9);
+    box-shadow: none;
+  }
+  
+  .cd-card.elevation-1 {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .cd-card.elevation-2 {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cd-card.elevation-3 {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cd-card.variant-default {
+    background-color: var(--cd-white, #ffffff);
+  }
+  
+  .cd-card.variant-primary {
+    background-color: var(--cd-primary, #002c6c);
+    color: var(--cd-text-light, #ffffff);
+  }
+  
+  .cd-card.variant-secondary {
+    background-color: var(--cd-secondary-hover, #f2f6fa);
+    color: var(--cd-text-dark, #002c6c);
+  }
+  
+  .cd-card.clickable {
+    cursor: pointer;
+  }
+  
+  .cd-card.hover-animation:hover:not(.disabled) {
+    transform: translateY(-2px);
+  }
+  
+  .cd-card.hover-animation.elevation-0:hover:not(.disabled) {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .cd-card.hover-animation.elevation-1:hover:not(.disabled) {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cd-card.hover-animation.elevation-2:hover:not(.disabled) {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cd-card.hover-animation.elevation-3:hover:not(.disabled) {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  :host(:focus-visible) .cd-card:not(.disabled) {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--cd-primary, #002c6c);
+  }
+  
+  .cd-card.disabled {
+    opacity: var(--cd-disabled-opacity, 0.3);
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  
+  ::slotted([slot="header"]) {
+    display: block;
+    margin-bottom: var(--card-padding);
+  }
+  
+  ::slotted([slot="footer"]) {
+    display: block;
+    margin-top: var(--card-padding);
+    padding-top: var(--card-padding);
+    border-top: 1px solid var(--cd-border-color, #D9D9D9);
+  }

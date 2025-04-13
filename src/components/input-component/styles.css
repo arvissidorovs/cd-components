@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+.input-container {
+    position: relative;
+    width: 256px;
+}
+
+.input-wrapper,
+.select-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.cd-input,
+.cd-select {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    padding-right: 2.5rem;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.cd-input:focus-visible,
+.cd-select:focus-visible {
+    border-color: #002c6c;
+    border-width: 1px;
+    outline: 0;
+    box-shadow: 0 0 0 2px #002c6c52;	
+}
+
+.cd-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.chevron-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: transform 0.2s ease;
+}
+
+.chevron-icon.chevron-up {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.select-chevron {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.chevron-img {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.2s ease;
+}
+
+.cd-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    background: #fff;
+    z-index: 10;
+    max-height: 160px;
+    overflow-y: auto;
+    display: none;
+    margin-top: 4px;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cd-dropdown.active {
+    display: block;
+}
+
+.cd-dropdown div {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.cd-dropdown div:hover {
+    background-color: #F2F6FA;
+}
+ 
+.cd-dropdown div.selected {
+    background-color: #F2F6FA;
+}
+
+.cd-select::-ms-expand {
+    display: none;
+}
+
+.component-container {
+    position: relative;
+    width: 100%;
+}

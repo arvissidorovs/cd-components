@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+button.cd-button {
+  height: var(--cd-button-height);
+  width: var(--cd-button-width);
+  background-color: var(--cd-primary);
+  border: 1px solid var(--cd-primary);
+  color: var(--cd-text-light);
+  border-radius: var(--cd-border-radius);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+}
+
+.cd-button:hover {
+  cursor: pointer;
+  background-color: var(--cd-primary-hover);
+  border: 1px solid var(--cd-primary-hover);
+  transition: var(--cd-transition);
+}
+
+.cd-button.type-secondary {
+  background: var(--cd-white);
+  color: var(--cd-primary);
+}
+
+.cd-button.type-secondary:hover {
+  background: var(--cd-secondary-hover);
+  transition: var(--cd-transition);
+  border: 1px solid var(--cd-primary-hover);
+}
+
+.cd-button.type-danger {
+  background: var(--cd-white);
+  color: var(--cd-text-danger);
+  border: 1px solid var(--cd-danger);
+}
+
+.cd-button.type-danger:hover {
+  background: var(--cd-danger-hover);
+  transition: var(--cd-transition);
+  border: 1px solid var(--cd-danger);
+}
+
+/* Sizes */
+.cd-button.size-small {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.cd-button.size-medium {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.cd-button.size-large {
+  padding: 14px 28px;
+  font-size: 16px;
+}
+
+.cd-button.size-auto {
+  width: 100%;
+  padding: 14px 28px;
+}
+
+.cd-button.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.cd-button:focus-visible {
+  outline: none;
+  box-shadow: var(--cd-focus-shadow);
+}
